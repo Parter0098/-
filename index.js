@@ -9,14 +9,6 @@ openModal.addEventListener(
 
 closeModal.addEventListener(
   'click',
-  () => (
-    (modal.style.display = 'none'),
-    (openModal.style.display = 'block')
-  )
+  () => ((modal.style.display = 'none'), (openModal.style.display = 'block'))
 )
 
-window.addEventListener('click', ({ target }) => {
-  if (target === modal) {
-    modal.style.display = 'none'
-  }
-})
